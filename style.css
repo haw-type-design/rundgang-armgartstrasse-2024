@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Split Flap";
-    src: url("https://lo123z.github.io/SplitFlapVF.woff2");
+    src: url("/fonts/SplitFlapV2VF.woff");
 }
 
 body {
@@ -31,6 +31,7 @@ body {
     margin-top: 1mm;
     font-size: 20pt;
     line-height: 24pt;
+    font-family: Helvetica, Arial;
 }
 
 .headline {
