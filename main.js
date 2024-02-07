@@ -1,13 +1,13 @@
 window.addEventListener('load', () => {
     document.getElementById("magenta").addEventListener("click", function () {
-        document.querySelectorAll("body")[0].style.color = "magenta";
+        document.querySelectorAll("body")[0].style.color = "#E6007D";
         this.classList.add("active");
         document.getElementById("black").classList.remove("active");
         document.getElementById("olive").classList.remove("active");
     });
 
     document.getElementById("olive").addEventListener("click", function () {
-        document.querySelectorAll("body")[0].style.color = "olive";
+        document.querySelectorAll("body")[0].style.color = "#81803B";
         this.classList.add("active");
         document.getElementById("magenta").classList.remove("active");
         document.getElementById("black").classList.remove("active");
@@ -18,5 +18,14 @@ window.addEventListener('load', () => {
         this.classList.add("active");
         document.getElementById("magenta").classList.remove("active");
         document.getElementById("olive").classList.remove("active");
+    });
+
+    var ce = document.querySelectorAll('[contenteditable]')
+    ce.forEach((item) => {
+        item.addEventListener('paste', function (e) {
+            e.preventDefault()
+            var text = e.clipboardData.getData('text/plain')
+            document.execCommand('insertText', false, text)
+        })
     });
 });
