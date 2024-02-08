@@ -48,10 +48,9 @@ body {
 .headline {
     display: inline-block;
     font-size: 60pt;
-    line-height: 70t;
-    max-width: calc(297mm - 20mm);
+    line-height: 70pt;
+    width: calc(297mm - 20mm);
     hyphes: auto;
-    word-wrap: break-word;
 }
 
 .bottom-grid {
