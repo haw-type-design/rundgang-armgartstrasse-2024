@@ -67,14 +67,15 @@ body {
 }
 
 .description {
-    font-size: 22pt;
-    line-height: 26pt;
+    font-size: 19pt;
+    line-height: 23pt;
+    word-break: break-word;
 }
 .metadata {
     display: grid;
-    grid-gap: 18pt;
-    font-size: 16pt;
-    line-height: 20pt;
+    grid-gap: 17pt;
+    font-size: 14pt;
+    line-height: 17pt;
 }
 
 .prof:before {
