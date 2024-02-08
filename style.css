@@ -167,13 +167,33 @@ body {
     background-color: #eeeeee;
 }
 
+ol{
+    padding: 0;
+}
+
+.mode-demploi {
+    position: fixed;
+    top: 24px;
+    left: 48px;
+    height: auto;
+    width: 360px;
+    max-width: calc(100vw - 297mm - 400px);
+}
+
+.mode-demploi:before {
+    content: "Anleitung\A";
+    white-space: pre;
+    font-family: Inter-Bold;
+}
+
+
 /* Print styles */
 
 @media print {
     @page {
         size: A3;
     }
-    .color-picker, .print-button {
+    .color-picker, .print-button,.mode-demploi {
         display: none;
     }
     body {
