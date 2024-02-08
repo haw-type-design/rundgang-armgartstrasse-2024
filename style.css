@@ -186,6 +186,12 @@ ol{
     font-family: Inter-Bold;
 }
 
+.mode-demploi:after {
+    content: "\A\AHappy Rundgang!";
+    white-space: pre;
+    font-family: Inter-Bold;
+}
+
 
 /* Print styles */
 
