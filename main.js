@@ -19,6 +19,10 @@ window.addEventListener('load', () => {
         document.getElementById("magenta").classList.remove("active");
         document.getElementById("olive").classList.remove("active");
     });
+    
+     document.getElementById("print").addEventListener("click", function () {
+       window.print();
+    });
 
     var ce = document.querySelectorAll('[contenteditable]')
     ce.forEach((item) => {

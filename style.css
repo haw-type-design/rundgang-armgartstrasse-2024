@@ -148,13 +148,32 @@ body {
     outline: 4px solid #3333ff;
 }
 
+.print-button {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+    position: fixed;
+    bottom: 24px;
+    right: 48px;
+    height: 48px;
+    width: auto;
+    padding: 0 24px;
+    border-radius: 48px;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.print-button:hover {
+    background-color: #eeeeee;
+}
+
 /* Print styles */
 
 @media print {
     @page {
         size: A3;
     }
-    .color-picker {
+    .color-picker, .print-button {
         display: none;
     }
     body {
